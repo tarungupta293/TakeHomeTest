@@ -17,18 +17,18 @@ Clean structure over feature completeness
 Readable and maintainable code
 Showing how I’d build this in a real project
 
-## Structure
+### Structure
 I followed a simple clean architecture style:
-data → domain → presentation
-Data layer → provides mocked data
-Domain layer → use case + Repository Interface
-Presentation → ViewModel + Compose UI
-🔄 Data flow
-RepositoryManager → Usecase → ViewModel → UI
-RepositoryManager returns mock data (no networking)
-ViewModel converts it into UI state
-UI observes state using Compose
-📦 State handling
+- data → domain → presentation
+- Data layer → provides mocked data
+- Domain layer → use case + Repository Interface
+- Presentation → ViewModel + Compose UI
+
+Data flow
+- RepositoryManager → Usecase → ViewModel → UI
+- RepositoryManager returns mock data (no networking)
+- ViewModel converts it into UI state
+- UI observes state using Compose
 
 ### Used a sealed class:
 Loading
@@ -57,8 +57,8 @@ I added unit tests for:
 - Handling Dispatchers.Main in tests
 
 ### Time spent
-~2 hours for code implementation
-~1 for unit test cases + code/UI improvement
+- ~2 hours for code implementation
+- ~1 for unit test cases + code/UI improvement
 
 ### How to run
 - Clone the repo
