@@ -57,7 +57,8 @@ I added unit tests for:
 - Handling Dispatchers.Main in tests
 
 ### Time spent
-~3 hours
+~2 hours for code implementation
+~1 for unit test cases + code/UI improvement
 
 ### How to run
 - Clone the repo
